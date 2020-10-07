@@ -7,9 +7,12 @@ html{
 
 }
 body{
-    height: 300vh;
+    height: 600vh;
 }
 .text-m-primary{
+    color: $primary-color;
+}
+.text-m-secondary{
     color: $s-primary-color;
 }
 .text-m-dark{
@@ -22,6 +25,17 @@ body{
     padding: 10px 25px;
     border-radius: 30px;
     background-image: linear-gradient(to right,$primary-color,$s-primary-color);
+}
+.mine-2-btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1.5px solid $s-primary-color;
+    transition: 0.1s !important;
+    &:hover{
+        background-image: linear-gradient(to right,$primary-color,$s-primary-color);
+        color: white;
+    }
 }
 .s-mine-btn{
     padding: 8px 27px;
@@ -58,9 +72,111 @@ body{
 .service-card{
     border-radius: 35px !important;
     border: none;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(0.98);
+    }
 }
 .service-card-des{
     height: 180px;
+}
+
+.prices{
+    background-color: #7E76F915;
+}
+.price-card{
+    border-radius: 35px !important;
+    border: none;
+    transition: 0.5s;
+    &:hover{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+        transform: scale(0.98);
+    }
+    // &:focus{
+    //     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    // }
+    // &:active{
+    //     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    // }
+}
+.mine-map{
+    border: 1px solid $primary-color !important;
+    border-radius: 5px;
+}
+.footer{
+    background-image: url('../../img/lmedia.svg');
+    height: 450px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-position: 0% 100%;
+    padding: 100px 0px;
+}
+.footer-data{
+    margin-top: 90px;
+}
+.s-icon{
+    text-decoration: none;
+    margin: 0px 10px;
+    &:hover{
+        color: $dark
+    }
+    .fa-icon{
+        text-decoration: none;
+    }
+    
+}
+.anti-link{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        text-decoration: none;
+        color: white;
+    }
+}
+.ql-link{
+    text-decoration: none;
+    color: white;
+    li{
+        text-decoration: none;
+    }
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+}
+.s-icon:hover, .s-icon:focus, .s-icon:active, .s-icon:visited, .s-icon:link{
+    text-decoration: none;
+}
+
+
+.slick-slide{
+    &:focus{
+        outline-color: $secondary-color;
+    }
+    &:active{
+        outline: none !important;
+        border: none !important;
+    }
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        width: 8px !important;
+        height: 8px !important;
+        background-color: transparent;
+        border: 2px solid $s-primary-color;
+        border-radius: 50%;
+
+        
+    }
+    li.slick-active{
+        width: 15px !important;
+        height: 15px !important;
+        background-color: $s-primary-color !important;
+    }
 }
 
 // Scroll Bar
