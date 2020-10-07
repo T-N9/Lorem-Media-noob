@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'variables';
+*{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+
+}
+body{
+    height: 300vh;
+}
+.text-m-primary{
+    color: $s-primary-color;
+}
+.text-m-dark{
+    color: $dark;
+}
+.font-m-larger{
+    font-size:large;
+}
+.mine-btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right,$primary-color,$s-primary-color);
+}
+.s-mine-btn{
+    padding: 8px 27px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right,$primary-color,$s-primary-color);
+    
+}
+.site-logo{
+    width: 150px;
+}
+.site-nav{
+    position: absolute;
+    top: 0;
+}
+.home{
+    background-image: url('../../img/bg-Shape.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+
+.introduce{
+    background-image: url('../../img/bg-2.svg');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 102% 50%;
+}
+.services{
+    background-image: url('../../img/bg-3.svg');
+    background-size: 100%;
+    
+    background-position: center;
+}
+.service-card{
+    border-radius: 35px !important;
+    border: none;
+}
+.service-card-des{
+    height: 180px;
+}
+
+// Scroll Bar
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f110; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:$s-primary-color;
+    border-radius: 10px; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:$primary-color; 
+  }
+  @import 'responsive';
