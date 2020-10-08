@@ -4,7 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 html{
-
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     height: 600vh;
@@ -20,6 +21,24 @@ body{
 }
 .font-m-larger{
     font-size:large;
+}
+.m-delay-0.5{
+    animation-delay: $mydelay;
+}
+.m-delay-1{
+    animation-delay: $mydelay+0.5;
+}
+.m-delay-2{
+    animation-delay: $mydelay+1;
+}
+.m-delay-3{
+    animation-delay: $mydelay+1.5;
+}
+.m-delay-4{
+    animation-delay: $mydelay+2;
+}
+.m-animate-infinite{
+    animation-iteration-count: infinite;
 }
 .mine-btn{
     padding: 10px 25px;
@@ -57,7 +76,43 @@ body{
     background-size: 50%;
     
 }
-
+.home-to-next{
+    position: absolute;
+    bottom: 50px;
+    width:50px;
+    height:50px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid $primary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    img{
+        width: 18px;
+    }
+}
+.bg-m-primary{
+    background-color: $primary-color;
+}
+.home-social-icon{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+    align-items: center;
+    a{
+        color: $primary-color;
+        display: block;
+        margin-bottom: 10px;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
 .introduce{
     background-image: url('../../img/bg-2.svg');
     background-size: 55%;

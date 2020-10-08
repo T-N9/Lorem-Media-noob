@@ -3,6 +3,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   height: 600vh;
 }
@@ -21,6 +26,36 @@ body {
 
 .font-m-larger {
   font-size: large;
+}
+
+.m-delay-0.5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.m-delay-1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.m-delay-2 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.m-delay-3 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.m-delay-4 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.m-animate-infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .mine-btn {
@@ -66,6 +101,61 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 50%;
+}
+
+.home-to-next {
+  position: absolute;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home-to-next img {
+  width: 18px;
+}
+
+.bg-m-primary {
+  background-color: #1A129F;
+}
+
+.home-social-icon {
+  position: absolute;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-social-icon a {
+  color: #1A129F;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.home-social-icon a:hover {
+  color: #1A129F;
 }
 
 .introduce {
@@ -262,7 +352,14 @@ body {
     width: 100% !important;
   }
   .home-left {
-    margin-top: 70px;
+    margin-top: -23px;
+  }
+  .home-right {
+    margin-top: 0px;
+  }
+  .home-social-icon {
+    bottom: 22px;
+    left: 25px;
   }
   .contact {
     background-position: 0% 0%;
@@ -287,7 +384,14 @@ body {
     width: 100% !important;
   }
   .home-left {
-    margin-top: 70px;
+    margin-top: -23px;
+  }
+  .home-social-icon {
+    bottom: 22px;
+    left: 25px;
+  }
+  .home-to-next {
+    bottom: 40px;
   }
   .contact {
     background-position: 0% 0%;

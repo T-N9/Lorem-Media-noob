@@ -22,9 +22,11 @@
   <link rel="stylesheet" href="slick/slick-theme.css">
   <!-- CSS File -->
   <link rel="stylesheet" href="dist/css/style.css">
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" href="img/title-icon.svg" />
 </head>
 <body>
-  <header class="container-fluid site-nav">
+  <header class="container-fluid site-nav animate__animated animate__bounceInDown m-delay-1">
     <div class="row">
       <div class="container">
         <div class="row">
@@ -70,12 +72,12 @@
       </div>
     </div>
   </header>
-  <section class="container-fluid home">
+  <section id="home" class="container-fluid home">
     <div class="row">
       <div class="container">
-        <div class="row min-vh-100 align-items-center justify-content-center flex-column-reverse flex-md-row">
-          <div class="col-12 col-md-6 mt-5 mt-md-0">
-            <div class="my-3 text-center text-md-left">
+        <div class="row min-vh-100 align-items-center justify-content-center flex-column flex-md-row">
+          <div class="col-12 col-md-6 mt-md-5 mt-md-0 home-right">
+            <div class="my-3 text-center text-md-left animate__animated animate__slideInLeft">
               <h3 class="text-uppercase">Social Media</h3>
               <h1 class="text-uppercase font-weight-bolder text-m-dark">For Business!</h1>
               <p class="text-uppercase text-black-50">
@@ -87,15 +89,36 @@
             </div>
           </div>
           <div class="col-12 col-md-6 mt-md-0 home-left">
-            <div class="my-3 mx-5 mx-md-0">
+            <div class="my-3 mx-5 mx-md-0 animate__animated animate__slideInRight">
               <img src="img/content-1.svg" class="w-100" alt="home-image">
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="home-social-icon animate__animated animate__backInUp m-delay-2">
+      <a href="#" class="anti-link">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="anti-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="anti-link">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="anti-link">
+        <i class="fab fa-google-plus"></i>
+      </a>
+      <div class="bg-m-primary" style="width: 3px;height: 30px;">
+      </div>
+    </div>
+    <a href="#introduce">
+      <div class="home-to-next animate__animated animate__fadeIn m-delay-4 shadow">
+        <img src="img/mouse.svg" class="animate__animated animate__bounce m-delay-4 m-animate-infinite" alt="mouse">
+      </div>
+    </a>
   </section>
-  <section class="container-fluid introduce">
+  <section id="introduce" class="container-fluid introduce">
     <div class="row min-vh-100 align-items-center">
       <div class="col-12 col-md-6 py-5">
         <div class="w-75">
@@ -117,7 +140,7 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid services">
+  <section id="services" class="container-fluid services">
     <div class="row min-vh-100">
       <div class="container">
         <div class="row pt-5">
@@ -243,7 +266,7 @@ With constant growth and engagement you will be sure to have the thriving you’
       </div>
     </div>
   </section>
-  <section class="container-fluid prices">
+  <section id="prices" class="container-fluid prices">
     <div class="row min-vh-100 py-5">
       <div class="container">
         <div class="col-12">
@@ -401,7 +424,7 @@ With constant growth and engagement you will be sure to have the thriving you’
       </div>
     </div>
   </section>
-  <section class="container-fluid contact">
+  <section id="contact" class="container-fluid contact">
     <div class="row">
       <div class="container">
         <div class="row py-5">

@@ -28,8 +28,15 @@
          width: 100% !important;
      }
      .home-left{
-         margin-top:70px;
+        margin-top: -23px
      }
+     .home-right{
+         margin-top: 0px;
+     }
+     .home-social-icon{
+        bottom: 22px;
+        left: 25px;
+    }
      .contact{
         background-position: 0% 0%;
     }
@@ -52,7 +59,14 @@
         width: 100% !important;
     }
     .home-left{
-        margin-top:70px;
+        margin-top: -23px
+     }
+    .home-social-icon{
+        bottom: 22px;
+        left: 25px;
+    }
+    .home-to-next{
+        bottom: 40px;
     }
     .contact{
         background-position: 0% 0%;
