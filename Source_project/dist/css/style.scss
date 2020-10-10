@@ -68,6 +68,43 @@ body{
 .site-nav{
     position: absolute;
     top: 0;
+    z-index: 5;
+}
+.site-nav-scroll{
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 5px #00000020;
+    animation: navShow 0.5s linear;
+    .nav-link{
+        color: $s-primary-color !important;
+        &:active{
+            color: $primary-color;
+        }
+    }
+    .menu-icon{
+        color: $primary-color;
+    }
+}
+.nav-a{
+    border: 2px solid !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+}
+// .nav-a{
+//     border: 2px solid !important;
+//     font-weight: bold !important;
+//     border-radius: 10px !important;
+// }
+.navbar-toggler{
+    outline: none;
+    border: none;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+    .menu-icon{
+        font-size: 1.5em;
+    }
 }
 .home{
     background-image: url('../../img/bg-Shape.svg');
@@ -102,7 +139,7 @@ body{
     bottom: 50px;
     display: flex;
     flex-direction: column;
-    left: 100px;
+    left: 50px;
     align-items: center;
     a{
         color: $primary-color;
@@ -206,7 +243,21 @@ body{
 .s-icon:hover, .s-icon:focus, .s-icon:active, .s-icon:visited, .s-icon:link{
     text-decoration: none;
 }
-
+#up{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:$s-primary-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    cursor: pointer;
+    animation: upShow 0.5s linear;
+}
 
 .slick-slide{
     &:focus{

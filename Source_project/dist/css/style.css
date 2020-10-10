@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@-webkit-keyframes navShow {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes navShow {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes upShow {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes upShow {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -94,6 +137,48 @@ body {
 .site-nav {
   position: absolute;
   top: 0;
+  z-index: 5;
+}
+
+.site-nav-scroll {
+  position: fixed;
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px #00000020;
+          box-shadow: 0 0 5px #00000020;
+  -webkit-animation: navShow 0.5s linear;
+          animation: navShow 0.5s linear;
+}
+
+.site-nav-scroll .nav-link {
+  color: #6156F9 !important;
+}
+
+.site-nav-scroll .nav-link:active {
+  color: #1A129F;
+}
+
+.site-nav-scroll .menu-icon {
+  color: #1A129F;
+}
+
+.nav-a {
+  border: 2px solid !important;
+  font-weight: bold !important;
+  border-radius: 10px !important;
+}
+
+.navbar-toggler {
+  outline: none;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+
+.navbar-toggler .menu-icon {
+  font-size: 1.5em;
 }
 
 .home {
@@ -142,7 +227,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: 100px;
+  left: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -268,6 +353,29 @@ body {
   text-decoration: none;
 }
 
+#up {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #6156F9;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-animation: upShow 0.5s linear;
+          animation: upShow 0.5s linear;
+}
+
 .slick-slide:focus {
   outline-color: #7E76F9;
 }
@@ -327,6 +435,27 @@ body {
   .contact {
     background-position: 16% 0%;
   }
+  .site-nav {
+    background-color: #ffffffee;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    -webkit-box-shadow: 0 0 5px #333333ee;
+            box-shadow: 0 0 5px #333333ee;
+  }
+  .site-nav .menu-icon {
+    color: #1A129F !important;
+  }
+  .site-nav .nav-link {
+    color: #1A129F !important;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+  .site-nav .navbar-nav {
+    padding-top: 20px;
+  }
   .footer {
     padding: 105px 0px;
     height: 607px;
@@ -342,6 +471,10 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #up {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -350,6 +483,27 @@ body {
   }
   .introduce-right {
     width: 100% !important;
+  }
+  .site-nav {
+    background-color: #ffffffee;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    -webkit-box-shadow: 0 0 5px #333333ee;
+            box-shadow: 0 0 5px #333333ee;
+  }
+  .site-nav .menu-icon {
+    color: #1A129F !important;
+  }
+  .site-nav .nav-link {
+    color: #1A129F !important;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+  .site-nav .navbar-nav {
+    padding-top: 20px;
   }
   .home-left {
     margin-top: -23px;
@@ -382,6 +536,27 @@ body {
   }
   .introduce-right {
     width: 100% !important;
+  }
+  .site-nav {
+    background-color: #ffffffee;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    -webkit-box-shadow: 0 0 5px #333333ee;
+            box-shadow: 0 0 5px #333333ee;
+  }
+  .site-nav .menu-icon {
+    color: #1A129F !important;
+  }
+  .site-nav .nav-link {
+    color: #1A129F !important;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+  .site-nav .navbar-nav {
+    padding-top: 20px;
   }
   .home-left {
     margin-top: -23px;
