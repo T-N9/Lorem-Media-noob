@@ -28,41 +28,6 @@ $(document).ready(function(){
             $('.menu-icon').removeClass('fa fa-bars').addClass('fas fa-times');
         }
     });
-    // var waypoint = new Waypoint({
-    //     element: document.getElementById('home'),
-    //     handler: function(direction) {
-    //       console.log('This is Home');
-    //       $(".nav-link[href='#home']").addClass('nav-a');
-    //     },
-    //     offset: '0%'
-    //     })
-    //     var waypoint = new Waypoint({
-    //     element: document.getElementById('introduce'),
-    //     handler: function(direction) {
-    //       console.log('This is introduce');
-    //       $(".nav-link").removeClass('nav-a');
-    //       $(".nav-link[href='#introduce']").addClass('nav-a');
-    //     },
-    //     offset: '25%'
-    //     })
-    //     var waypoint = new Waypoint({
-    //     element: document.getElementById('services'),
-    //     handler: function(direction) {
-    //       console.log('This is services');
-    //       $(".nav-link").removeClass('nav-a');
-    //       $(".nav-link[href='#services']").addClass('nav-a');
-    //     },
-    //     offset: '25%'
-    //     })
-    //     var waypoint = new Waypoint({
-    //     element: document.getElementById('prices'),
-    //     handler: function(direction) {
-    //       console.log('This is prices');
-    //       $(".nav-link").removeClass('nav-a');
-    //       $(".nav-link[href='#prices']").addClass('nav-a');
-    //     },
-    //     offset: '25%'
-    //     })
         var waypoint = new Waypoint({
         element: document.getElementById('introduce'),
         handler: function(direction) {
@@ -126,6 +91,12 @@ $(document).ready(function(){
                 // settings: "unslick"
                 // instead of a settings object
             ]
+        });
+
+        $(window).on("load",function(){
+            $(".loader-page").fadeOut(500,function(){
+                this.remove();
+            });
         });
     
 });

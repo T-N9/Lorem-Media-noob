@@ -237,10 +237,14 @@ body {
   color: #1A129F;
   display: block;
   margin-bottom: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .home-social-icon a:hover {
   color: #1A129F;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .introduce {
@@ -305,7 +309,7 @@ body {
 .footer {
   height: 450px;
   background-position: 0% 100%;
-  padding: 150px 0px 0 0;
+  padding: 110px 0px 0 0;
 }
 
 .footer-data {
@@ -457,7 +461,7 @@ body {
     padding-top: 20px;
   }
   .footer {
-    padding: 105px 0px;
+    padding: 100px 0px;
     height: 607px;
   }
   .footer-data {
@@ -516,11 +520,11 @@ body {
     left: 25px;
   }
   .contact {
-    background-position: 0% 0%;
+    background-position: 3% 0%;
   }
   .footer {
     padding: 0px 0px;
-    height: 722px;
+    height: 780px;
   }
   .footer-data {
     margin-top: 0%;
@@ -569,11 +573,11 @@ body {
     bottom: 40px;
   }
   .contact {
-    background-position: 0% 0%;
+    background-position: 3% 0%;
   }
   .footer {
     padding: 0px 0px;
-    height: 720px;
+    height: 777px;
   }
   .footer-data {
     margin-top: 0%;
