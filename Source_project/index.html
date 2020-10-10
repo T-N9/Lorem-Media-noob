@@ -4,6 +4,24 @@
 </div>
 <html lang="en">
 <head>
+  <!-- Primary Meta Tags -->
+  <title>Lorem Media</title>
+  <meta name="title" content="Lorem Media">
+  <meta name="description" content="Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. ">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://loremmedia.great-site.net/Source_project/">
+  <meta property="og:title" content="Lorem Media">
+  <meta property="og:description" content="Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. ">
+  <meta property="og:image" content="">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://loremmedia.great-site.net/Source_project/">
+  <meta property="twitter:title" content="Lorem Media">
+  <meta property="twitter:description" content="Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. ">
+  <meta property="twitter:image" content="">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorem Media</title>
@@ -216,7 +234,7 @@
               <h3 class="font-weight-bolder">What We Offer</h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__slideInRight">
+          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__zoomIn">
             <div class="card shadow mb-5  service-card">
               <div class="card-body">
                 <div class="text-center">
@@ -236,7 +254,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__slideInRight m-delay-1">
+          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__zoomIn m-delay-1">
             <div class="card shadow mb-5  service-card">
               <div class="card-body">
                 <div class="text-center">
@@ -255,7 +273,7 @@ With constant growth and engagement you will be sure to have the thriving you’
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__slideInRight m-delay-2">
+          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__zoomIn m-delay-2">
             <div class="card shadow mb-5  service-card">
               <div class="card-body">
                 <div class="text-center">
@@ -274,7 +292,7 @@ With constant growth and engagement you will be sure to have the thriving you’
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__slideInLeft m-delay-2">
+          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__zoomIn m-delay-2">
             <div class="card shadow mb-5  service-card">
               <div class="card-body">
                 <div class="text-center">
@@ -292,7 +310,7 @@ With constant growth and engagement you will be sure to have the thriving you’
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__slideInLeft m-delay-1">
+          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__zoomIn m-delay-1">
             <div class="card shadow mb-5  service-card">
               <div class="card-body">
                 <div class="text-center">
@@ -310,7 +328,7 @@ With constant growth and engagement you will be sure to have the thriving you’
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__slideInLeft">
+          <div class="col-12 col-md-6 col-lg-4 animate__animated wow animate__zoomIn">
             <div class="card shadow mb-5  service-card">
               <div class="card-body">
                 <div class="text-center">
@@ -651,7 +669,11 @@ With constant growth and engagement you will be sure to have the thriving you’
   <!-- WOW JS -->
   <script src="../node_modules/wowjs/dist/wow.js"></script>
   <script>
-    
+    $('.nav-link').click(function(){
+        $('.navbar-collapse').removeClass('show');
+        $('.menu-icon').addClass('fa fa-bars');
+        
+    });
   </script>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <!-- <script src="/__/firebase/7.23.0/firebase-app.js"></script> -->

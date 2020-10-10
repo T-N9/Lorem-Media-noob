@@ -26,8 +26,10 @@ $(document).ready(function(){
         }
         else{
             $('.menu-icon').removeClass('fa fa-bars').addClass('fas fa-times');
+            
         }
     });
+    
         var waypoint = new Waypoint({
         element: document.getElementById('introduce'),
         handler: function(direction) {
